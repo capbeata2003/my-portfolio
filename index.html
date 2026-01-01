@@ -22,32 +22,124 @@
 
     <main>
         <section id="home" class="hero">
-            <h1>Hi, I'm Your Name</h1>
-            <p>DevOps / Cloud Infrastructure Engineer based in Berlin.</p>
-            <button id="contactBtn">Get in touch</button>
+            <div class="hero-content">
+                <img src="profile.jpg" alt="Your Profile Picture" class="profile-pic" />
+                <h1>Your Name</h1>
+                <p>DevOps Engineer | Cloud Infrastructure Architect | SAP Ecosystem</p>
+                <p class="hero-subtitle">Based in Berlin, Germany. Kubernetes, AWS, Terraform, Dynatrace expert.</p>
+                <button id="contactBtn">Get in touch</button>
+            </div>
         </section>
 
         <section id="about" class="section">
-            <h2>About</h2>
-            <p>
-                Short bio about you, your experience with Kubernetes, AWS, SAP, and automation.
+            <h2>About Me</h2>
+            <p class="about-text">
+                Passionate infrastructure engineer with expertise in cloud-native automation, observability, and SAP
+                integrations. Recently relocated from Hungary to Berlin, managing high-scale Kubernetes clusters and
+                monitoring solutions.
             </p>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="project-list" id="projectList">
-                <!-- JS will inject project cards here -->
+        <section id="experiences" class="section">
+            <h2>Experience</h2>
+            <div class="panel-grid">
+                <div class="panel-card">
+                    <h3>DevOps Engineer @ SAP SE (2024 - Present)</h3>
+                    <ul>
+                        <li>Infrastructure automation using Terraform and Ansible for Kubernetes clusters.</li>
+                        <li>Dynatrace implementation for enterprise observability.</li>
+                        <li>Cross-team coordination across timezones.</li>
+                    </ul>
+                </div>
+                <div class="panel-card">
+                    <h3>Cloud Infrastructure Architect (2022 - 2024)</h3>
+                    <ul>
+                        <li>AWS multi-account strategies and GitOps pipelines.</li>
+                        <li>Prometheus/Grafana monitoring at scale with Thanos.</li>
+                        <li>FIPS-compliant network security setups.</li>
+                    </ul>
+                </div>
+                <div class="panel-card">
+                    <h3>SRE @ Previous Role (2020 - 2022)</h3>
+                    <ul>
+                        <li>RHEL/Linux admin for production environments.</li>
+                        <li>CI/CD optimization with GitLab and Vault.</li>
+                        <li>OpenTelemetry instrumentation for apps.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="studies" class="section">
+            <h2>Studies</h2>
+            <div class="panel-grid">
+                <div class="panel-card">
+                    <h3>Technical University of Budapest</h3>
+                    <p>Master's in Computer Engineering (Focus: Cloud Systems)</p>
+                </div>
+                <div class="panel-card">
+                    <h3>Certified Kubernetes Administrator (CKA)</h3>
+                    <p>CNCF Certification, 2024</p>
+                </div>
+                <div class="panel-card">
+                    <h3>AWS Solutions Architect - Professional</h3>
+                    <p>Amazon Web Services, 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>Kubernetes, AWS, Terraform, Ansible</li>
+                        <li>Dynatrace, Prometheus, Grafana, Thanos</li>
+                        <li>GitLab CI/CD, Vault, OpenTelemetry</li>
+                        <li>SAP BTP, RHEL/Linux, FIPS Compliance</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Problem-solving under pressure</li>
+                        <li>Team collaboration across timezones</li>
+                        <li>Documentation & knowledge transfer</li>
+                        <li>Agile methodologies (Scrum/Kanban)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="languages">
+                <h3>Spoken Languages</h3>
+                <ul class="skill-list">
+                    <li>English (Fluent)</li>
+                    <li>German (Intermediate)</li>
+                    <li>Hungarian (Native)</li>
+                </ul>
             </div>
         </section>
 
         <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/your-username" target="_blank">your-username</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Your LinkedIn</a></p>
+            <div class="contact-grid">
+                <div class="panel-card">
+                    <h3>Phone</h3>
+                    <p>+49 123 4567890</p>
+                </div>
+                <div class="panel-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:you@example.com">you@example.com</a></p>
+                </div>
+                <div class="panel-card">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/your-profile"
+                            target="_blank">linkedin.com/in/your-profile</a></p>
+                </div>
+            </div>
         </section>
     </main>
+
 
     <footer class="site-footer">
         <p>&copy; <span id="year"></span> Your Name</p>
